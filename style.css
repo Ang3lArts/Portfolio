@@ -1,0 +1,169 @@
+:root {
+    --accent-color: gold;
+    --primary-color: #1B1C1F;
+    --secondary-color: black;
+    --text-color: white;
+    --secondary-text-color: lightgrey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 25px;
+}
+
+.navbar a {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12pt;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: var(--accent-color);
+    color: black;
+}
+
+.navbar a:active {
+    background: var(--accent-color);
+    color: blue;
+}
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12pt;
+    color: var(--text-color);
+}
+
+body {
+    min-height: 100vh;
+    background: url(123.jpg ) no-repeat center fixed;
+    background-color: var(--primary-color);
+    background-size: cover;
+    padding: 100px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    background-size: cover;
+}
+
+header {
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+header.container {
+    width: 850px;
+    max-width: 100%;
+}
+
+header img {
+    height: 30vh;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 4rem;
+    text-shadow: 3px 3px var(--secondary-color);
+
+}
+
+header h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-shadow: 3px 3px var(--secondary-color);
+
+}
+
+header p {
+    color: var(--secondary-text-color);
+    text-shadow: 3px 3px 3px var(--secondary-color);
+
+}
+
+header .read-more {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+    font-weight: 400;
+    border-radius: 1000px;
+    padding: .5em 1.25em;
+    transition: 200ms ease-in;
+    cursor: pointer;
+}
+
+header .read-more:hover {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+#skills {
+    padding: 80px 20px 150px 20px;
+}
+
+#skills h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 3px 3px var(--secondary-color);
+}
+
+#skills .wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.container-skills {
+    width: 400px;
+    max-width: 100%;
+}
+
+.container-skills ul {
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+.container-skills ul li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-skills ul li progress {
+    accent-color: var(--accent-color);
+}
+
+section{
+    padding: 80px 20px 150px 20px;
+    display:grid
+}
+
+
+
+
